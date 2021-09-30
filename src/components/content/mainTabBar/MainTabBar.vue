@@ -1,11 +1,11 @@
 <template>
  <tab-bar>
-   <tab-bar-item path="/home" activeColor="red">
+   <tab-bar-item path="/home" activeColor="#ff5777">
      <img slot="item-icon" src="~assets/img/tabbar/home.svg" alt="">
      <img slot="item-icon-active" src="~assets/img/tabbar/home_active.svg" alt="">
       <div slot="item-text">首页</div>
    </tab-bar-item>
-    <tab-bar-item path="/category">
+    <tab-bar-item path="/sort">
       <img slot="item-icon" src="~assets/img/tabbar/category.svg" alt="">
        <img slot="item-icon-active" src="~assets/img/tabbar/category_active.svg" alt="">
        <div slot="item-text">分类</div>

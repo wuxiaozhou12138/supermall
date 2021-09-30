@@ -44,6 +44,6 @@ export default {
       vertical-align: middle;
   }
   .active{
-      color: #d81e06;
+      color: #ff5777;
   }
 </style>
