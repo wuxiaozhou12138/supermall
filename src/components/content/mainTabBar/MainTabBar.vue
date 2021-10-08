@@ -24,6 +24,7 @@
 </template>
 
 <script>
+// 导入导航组件
 import TabBar from '@/components/common/tabbar/TabBar.vue';
 import TabBarItem from '@/components/common/tabbar/TabBarItem.vue';
 
