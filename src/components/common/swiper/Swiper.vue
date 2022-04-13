@@ -28,7 +28,7 @@ export default {
         // 滑动比例
         moveRatio: {
             type: Number,
-            default: 0.5,
+            default: 0.2,
         },
         // 是否显示indicator
         showIndicator:{

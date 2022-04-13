@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath:'./',
     configureWebpack:{
         resolve:{
             // 配置别名

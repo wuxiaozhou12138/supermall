@@ -22,7 +22,8 @@ export default {
     .nav-bar{
         display: flex;
         line-height: 44px;
-        box-shadow: 0 2px 5px rgba(100, 100, 100, 0.1)
+        box-shadow: 0 2px 5px rgba(100, 100, 100, 0.1);
+        font-size: 18px;
     }
     .left,.right{
         width: 60px;

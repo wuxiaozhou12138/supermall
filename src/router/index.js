@@ -5,6 +5,7 @@ const Home = () => import('views/home/Home');
 const Cart = () => import('views/cart/Cart');
 const Profile = () => import('views/profile/Profile');
 const Sort = () => import('views/sort/Sort');
+const Detail = () => import('views/detail/Detail');
 
 Vue.use(Router)
 
@@ -30,8 +31,12 @@ export default new Router({
       path:'/sort',
       component:Sort
     },
+    {
+      path:'/detail/:iid',
+      component:Detail
+    },
   ],
-  mode:'history',
+  mode:'hash',
 })
 
 const originalReplace = Router.prototype.replace;

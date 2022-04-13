@@ -18,7 +18,7 @@ export default {
     computed:{
         isActive(){
             // 当前活跃状态的路由的路径是否包含这个组件中的path，不包含返回-1
-            // 所有这个计算属性的值当不包含的时候返回false
+            // 这个计算属性的值当不包含的时候返回false
             return this.$route.path.indexOf(this.path) !== -1;
         }
     },

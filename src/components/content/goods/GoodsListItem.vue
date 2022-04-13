@@ -1,6 +1,6 @@
 <template>
-    <div class="goods-item">
-        <img :src="goodsItem.show.img" alt="">
+    <div class="goods-item" @click="goodsClick">
+        <img v-lazy="showImage">
         <div class="goods-info">
             <p class="title">{{goodsItem.title}}</p>
             <span class="price">{{goodsItem.price}}</span>
@@ -19,7 +19,19 @@
                     return {}
                 }
             }
+        },
+        methods:{
+            goodsClick(){
+                // 路由跳转并拼接商品id
+                this.$router.push('/detail/' + this.goodsItem.iid)
+            }
+        },
+        computed:{
+            showImage(){
+                return this.goodsItem.image || this.goodsItem.show.img;
+            }
         }
+        
     }
 </script>
 
